@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { JobPostingComponent } from './job-posting/job-posting.component';
 import { AllJobsComponent } from './all-jobs/all-jobs.component';
 import { RegisterComponent } from './register/register.component';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RegisterComponent } from './register/register.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

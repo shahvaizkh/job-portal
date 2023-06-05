@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class RegisterComponent {
 
+  registerUser(item: any) {
+    console.warn(item);
+  }
+
 }

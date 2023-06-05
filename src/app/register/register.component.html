@@ -14,7 +14,7 @@
 
                 <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
 
-                    <form style="width: 23rem;">
+                    <form #registerForm="ngForm" (ngSubmit)="registerUser(registerForm.value)" style="width: 23rem;">
 
                         <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Register Now</h3>
 
@@ -22,29 +22,32 @@
                             <div class="input-group-append">
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>
                             </div>
-                            <input type="text" name="" class="form-control input_user" value="" placeholder="User Name" required>
+                            <input type="text" name="name" class="form-control input_user" value=""
+                                placeholder="User Name" ngModel>
                         </div>
 
                         <div class="input-group mb-3">
                             <div>
                                 <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                             </div>
-                            <input type="email" name="" class="form-control input_user" value="" placeholder="User Email" required>
+                            <input type="email" name="email" class="form-control input_user" value=""
+                                placeholder="User Email" ngModel>
                         </div>
 
                         <div class="input-group mb-3">
                             <div class="input-group-append">
                                 <span class="input-group-text"><i class="fa fa-phone"></i></span>
                             </div>
-                            <input type="number" name="" class="form-control input_user" value="" placeholder="User Phone" required>
+                            <input type="number" name="phone" class="form-control input_user" value=""
+                                placeholder="User Phone" ngModel>
                         </div>
 
                         <div class="input-group mb-2">
                             <div class="input-group-append">
                                 <span class="input-group-text"><i class="fas fa-key"></i></span>
                             </div>
-                            <input type="password" name="" class="form-control input_pass" value=""
-                                placeholder="User Password" required>
+                            <input type="password" name="password" class="form-control input_pass" value=""
+                                placeholder="User Password" ngModel>
                         </div>
                         <br>
                         <div class="pt-1 mb-4">

@@ -8,6 +8,10 @@ import { RouterModule, Routes, Router } from '@angular/router';
 })
 export class LoginComponent {
 
+  loginUser(item: any){
+    console.warn(item);
+  }
+
   constructor( 
     private router: Router
     
@@ -18,5 +22,6 @@ export class LoginComponent {
   // routeToRegister() {
   //   this.router.navigate(['register'])
   // }
+
 }
 
