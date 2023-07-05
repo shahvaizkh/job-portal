@@ -10,6 +10,10 @@ export class LoginComponent {
 
   loginUser(item: any){
     console.warn(item);
+
+    let data = {name:"", password:""};
+    localStorage.setItem('session', JSON.stringify(data) )
+
   }
 
   constructor( 
@@ -24,4 +28,3 @@ export class LoginComponent {
   // }
 
 }
-
