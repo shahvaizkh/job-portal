@@ -8,7 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { JobPostingComponent } from './job-posting/job-posting.component';
 import { AllJobsComponent } from './all-jobs/all-jobs.component';
 import { RegisterComponent } from './register/register.component';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { LayoutComponent } from './layout/layout.component'
 
 @NgModule({
   declarations: [
@@ -16,8 +17,9 @@ import { FormsModule } from '@angular/forms'
     LoginComponent,
     JobPostingComponent,
     AllJobsComponent,
-    RegisterComponent
-  ],
+    RegisterComponent,
+    LayoutComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,

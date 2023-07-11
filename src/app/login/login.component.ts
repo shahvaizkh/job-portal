@@ -4,27 +4,17 @@ import { RouterModule, Routes, Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
+  name = 'Shahvaiz Khan';
 
-  loginUser(item: any){
+  constructor(private router: Router) {}
+
+  loginUser(item: any) {
     console.warn(item);
-
-    let data = {name:"", password:""};
-    localStorage.setItem('session', JSON.stringify(data) )
-
+    localStorage.setItem('item', JSON.stringify(item))
+    this.router.navigate(['layout'])
   }
-
-  constructor( 
-    private router: Router
-    
-    ) {}
-
-  name = "Shahvaiz Khan"
-
-  // routeToRegister() {
-  //   this.router.navigate(['register'])
-  // }
 
 }

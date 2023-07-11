@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid justify-content-between">
+            <div class="d-flex">
+
+                <h3 class="heads">Welcome to <b style="font-weight: 900;">Job Portal App</b> </h3>
+
+            </div>
+
+            <ul class="navbar">
+
+                <span>Welcome, <b>{{ data.name }}</b></span>
+                <a class="link-primary" href="javascript:void(0);" (click)="logout()"><i class='bx bx-power-off'
+                        style="font-size: 25px; font-weight: 900; margin-left: 40px;"></i></a>
+
+            </ul>
+
+        </div>
+    </nav>
+
+</body>
+
+</html>

@@ -9,6 +9,7 @@ export class RegisterComponent {
 
   registerUser(item: any) {
     console.warn(item);
+    localStorage.setItem('session', JSON.stringify(item));
   }
 
 }
