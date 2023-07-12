@@ -1,4 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
+import { FormsModule }   from '@angular/forms';
+
+@NgModule({
+  imports: [
+    FormsModule
+  ]
+});
 
 @Component({
   selector: 'app-register',
