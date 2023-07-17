@@ -7,7 +7,9 @@ import { JobPostingComponent } from './job-posting/job-posting.component';
 import { AllJobsComponent } from './all-jobs/all-jobs.component';
 import { RegisterComponent } from './register/register.component';
 import { LayoutComponent } from './layout/layout.component';
-import { FormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxUiLoaderHttpModule, NgxUiLoaderModule } from 'ngx-ui-loader';
+import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 
 @NgModule({
   declarations: [
@@ -16,15 +18,18 @@ import { FormsModule } from '@angular/forms'
     JobPostingComponent,
     AllJobsComponent,
     RegisterComponent,
-    LayoutComponent
+    LayoutComponent,
+    ForgetPasswordComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
-  
+    FormsModule,
+    NgxUiLoaderModule,
+    NgxUiLoaderHttpModule,
+    ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

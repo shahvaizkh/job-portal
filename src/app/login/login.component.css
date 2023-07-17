@@ -17,55 +17,6 @@
     height: 42px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .Form {
     width: 100%;
     max-width: 400px;
@@ -304,3 +255,4 @@
   *, *:before, *:after {
     box-sizing: inherit;
   }
+

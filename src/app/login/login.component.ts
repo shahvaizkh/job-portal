@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterModule, Routes, Router } from '@angular/router';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,21 +7,16 @@ import { RouterModule, Routes, Router } from '@angular/router';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
-
   name = 'Shahvaiz Khan';
 
   constructor(private router: Router) {}
 
   loginUser(item: any) {
     console.warn(item);
-    localStorage.setItem('item', JSON.stringify(item))
-    this.router.navigate(['layout'])
+    localStorage.setItem('item', JSON.stringify(item));
+    this.router.navigate(['layout']);
   }
-
 }
-
-
-
 
 
 
@@ -46,7 +40,7 @@ export class LoginComponent {
 //   constructor(
 //     private fb: FormBuilder,
 //     private router: Router
-//   ) { 
+//   ) {
 //     this.loginForm = this.fb.group({
 //       name: ['', Validators.required],
 //       password: ['', Validators.required],
